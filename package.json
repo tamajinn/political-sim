@@ -1,0 +1,12 @@
+{
+  "name": "political-sim",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "test": "npm run test -w @psim/engine",
+    "typecheck": "npm run typecheck -w @psim/engine && npm run typecheck -w @psim/web",
+    "dev": "npm run dev -w @psim/web",
+    "build": "npm run build -w @psim/web"
+  }
+}
